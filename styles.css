@@ -40,3 +40,23 @@ body.modal-open{overflow:hidden}
 @media(max-width:1400px){.unit-cards{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.unit-cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.unit-cards{grid-template-columns:1fr}.rent-modal-dialog{padding:30px 20px 22px}.rent-modal-actions{grid-template-columns:1fr}.contact-option{padding:15px}.unit-subtitle{font-size:12px}}
+
+/* Facility gallery */
+.photo-gallery{padding:72px 0;background:#f5f7f4}
+.gallery-heading{max-width:700px;margin:0 auto 34px;text-align:center}
+.gallery-heading>span{display:block;margin-bottom:9px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.gallery-heading h2{margin:0 0 12px;color:var(--dark);font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.035em}
+.gallery-heading p{margin:0;color:var(--muted);font-size:15px;line-height:1.7}
+.gallery-grid{display:grid;grid-template-columns:1.45fr 1fr;grid-template-rows:repeat(2,250px);gap:18px}
+.gallery-item{margin:0;overflow:hidden;border-radius:10px;background:#dfe5df;box-shadow:0 12px 30px #0e2f1718}
+.gallery-item-large{grid-row:1/3}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.gallery-item:hover img{transform:scale(1.025)}
+@media(max-width:760px){
+  .photo-gallery{display:block;padding:52px 0}
+  .gallery-heading{margin-bottom:24px}
+  .gallery-heading p{font-size:14px}
+  .gallery-grid{grid-template-columns:1fr;grid-template-rows:none;gap:14px}
+  .gallery-item,.gallery-item-large{grid-row:auto;height:225px}
+  .gallery-item-large{height:275px}
+}
