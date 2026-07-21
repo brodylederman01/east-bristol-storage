@@ -1,11 +1,8 @@
-UPLOAD TO GITHUB
+Replace only styles.css in your GitHub repository with the styles.css file in this folder.
 
-1. Open your East Bristol Storage repository.
-2. Upload all files in this folder to the repository root.
-3. When GitHub asks about duplicate files, replace the existing versions.
-4. Commit the changes directly to the main branch.
-5. Wait 1-5 minutes for GitHub Pages to redeploy.
+The updated gallery now shows:
+- The exterior image in a wide frame on the left (or full width on mobile)
+- Both interior images in portrait frames on the right
+- object-fit: contain, so none of the photos are cropped
 
-The files index.html, styles.css, and script.js must remain at the top level.
-The PNG image files must also remain at the top level because the website references them by filename.
-Do not upload the ZIP itself as the website content.
+After uploading, commit to main, wait for GitHub Pages to redeploy, then hard refresh with Ctrl+F5 or open an incognito window.
